@@ -237,6 +237,7 @@
   </div>
 </template>
 <script>
+import { HTTP } from "../Service/AxiosService.js";
 export default {
   name: "AddEmployeeForm",
   data() {
@@ -269,6 +270,13 @@ export default {
       };
       event.preventDefault();
       console.log(data);
+      HTTP.post("/employee_payroll", data)
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
   },
 };
