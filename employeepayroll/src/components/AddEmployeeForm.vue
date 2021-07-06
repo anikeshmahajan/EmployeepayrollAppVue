@@ -238,7 +238,39 @@
 </template>
 <script>
 export default {
-  name : "EmployeeForm"
+  name: "AddEmployeeForm",
+  data() {
+    return {
+      form: {
+        name: "",
+        profilePicture: "",
+        gender: "",
+        departments: [],
+        salary: "400000",
+        startDate: {
+          month: "Jan",
+          date: "2",
+          year: "2021",
+        },
+        note: "",
+      },
+    };
+  },
+  methods: {
+    submit(event) {
+      const data = {
+        name: this.form.name,
+        profilePicture: this.form.profilePicture,
+        gender: this.form.gender,
+        departments: this.form.departments,
+        salary: this.form.salary,
+        startDate: this.form.startDate,
+        note: this.form.note,
+      };
+      event.preventDefault();
+      console.log(data);
+    },
+  },
 };
 </script>
 <style>
