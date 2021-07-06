@@ -3,7 +3,7 @@
     <div class="header-contain">
       <div class="emp-text-details">
         Employee Details
-       
+        <!-- <div class="emp-count">{{ size }}</div> -->
       </div>
       <div class="search">
         <img
