@@ -1,5 +1,17 @@
 {
-    "employee_payroll" :{
-        
-    }
+  "employee_payroll": {
+    "name": "Anikesh",
+    "profilePicture": "../assets/profile-images/Ellipse -2.png",
+    "gender": "Male",
+    "departments": [
+      "HR"
+    ],
+    "salary": "400000",
+    "startDate": {
+      "month": "Jan",
+      "date": "2",
+      "year": "2021"
+    },
+    "note": ""
+  }
 }
