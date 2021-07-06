@@ -12,9 +12,7 @@
   </div>
 </template>
 <script>
-export default {
-    name : "EmployeeHeader"
-};
+export default {};
 </script>
 <style>
 .header {
